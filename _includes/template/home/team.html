@@ -1,0 +1,18 @@
+<div class="section grey" id="team">
+  <div class="container">
+    <h3 class="h2 page-header">{{ section.title }}</h3>
+    <div class="row equal">
+      {% for item in team %}
+      <div class="col-sm-4 col-md-3 text-center"><a class="thumb" href="{{ site.url }}{{ item.url }}" >
+        <figure>
+          <img class="img-circle img-thumbnail" src="{{ site.cdn | replace: '0x0', '300x300'}}{{ item.avatar }}"/>
+        </figure>
+
+        {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
+        <p class="text-muted">{{ item.weight_class }}</p>
+        <p>{{ item.wins }}-{{ item.losses }}-{{ item.draws }} {% if item.kos > 0 %}({{ item.kos }} KOs){% endif %}</p>
+      </a><br></div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

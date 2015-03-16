@@ -1,0 +1,9 @@
+content:
+    title: Content
+    icon: sitemap
+gallery:
+    title: Gallery
+    icon: camera
+team:
+    title: Team
+    icon: users

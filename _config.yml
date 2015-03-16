@@ -1,0 +1,70 @@
+title: '10K Boxing'
+permalink: none
+url: 'http://10kboxing.com'
+timezone: Europe/London
+exclude:
+    - Gemfile
+    - Gemfile.lock
+analytics:
+    provider: google_analytics
+sharing:
+    provider:
+        - facebook
+        - twitter
+        - google
+        - linkedin
+        - pinterest
+        - stumbleupon
+    limit: '3'
+profiles:
+    provider:
+        - facebook
+        - twitter
+        - youtube
+        - instagram
+    facebook: 'https://facebook.com/10kboxing'
+    twitter: 'https://twitter.com/10kboxing'
+    pinterest: 'https://pinterest.com/brightonjapan'
+    youtube: 'https://youtube.com/10kboxing'
+    instagram: 'https://instagram.com/10kboxing'
+defaults:
+    -
+        scope:
+            path: ''
+            type: posts
+        values:
+            layout: page
+    -
+        scope:
+            path: ''
+            type: pages
+        values:
+            layout: page
+    -
+        scope:
+            path: ''
+            type: gallery
+        values:
+            layout: gallery
+    -
+        scope:
+            path: ''
+            type: team
+        values:
+            layout: fighter
+collections:
+    content:
+        output: true
+        permalink: ':path.html'
+    team:
+        output: true
+        permalink: ':path.html'
+    gallery:
+        output: true
+description: '10K Boxing'
+relative_permalinks: false
+v: 3g
+baseurl: /
+cdn: //cdn.donlabs.com/0x0/10kboxing/
+comments:
+    provider: '1'
